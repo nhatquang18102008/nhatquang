@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>chọn số N :</p>
+    <input type="number" id="soN"> 
+    <button onclick="HAMTINHTONG()">TÍNH</button>
+    <P>Tổng từ 1 đến <span id="soNhienthi">...</span> là:<span id="tonghienthi">...</span> </P>
+
+    <script>
+        function HAMTINHTONG() {
+            let N = document.getElementById('soN').value;
+            document.getElementById('soNhienthi').innerHTML = N;
+
+         let tong = 0;
+        
+         console.log(tong)
+         for (let i = 1; i <= N; i++) {
+            tong = tong + i;
+            
+         }
+
+         document.getElementById('tonghienthi').innerHTML = tong 
+        }
+    </script>
+</body>
+</html>

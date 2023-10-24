@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÍNH CHU VI VÀ DIỆN TÍCH HÌNH CHỮ NHẬT</title>
+</head>
+
+<body>
+    <p>Tính chu vi - diện tích</p>
+    <P>Nhập chiều dài và chiều rộng
+        <input type="number" id="chieudai">
+
+        <input type="number" id="chieurong">
+
+        <button onclick="hamxulycode()"> TINH</button>
+    </p>
+    <p> kết quả tính toán khi chiều dài bằng <span id="chieudaihienthi"></span> là: </p>
+
+    <p> kết quả tính toán khi chiều rộng bằng <span id="chieuronghienthi"></span> là: </p>
+
+    <p>chu vi hình chữ nhật là: <span id="chuvihienthi"></span></p>
+
+    <p>Diện Tích hình chữ nhật là: <span id="dientichhienthi"></span></p>
+
+    <script>
+        document.write("<hr>")
+        function hamxulycode() {
+            let a = document.getElementById("chieudai").value;
+            let r = document.getElementById("chieurong").value;
+            document.getElementById("chieudaihienthi").innerHTML = a;
+            document.getElementById("chieuronghienthi").innerHTML = r;
+            let chuvi = (Number(a)+Number(r))*2 ;
+            let dientich = a * r;
+            document.getElementById("chuvihienthi").innerHTML = chuvi;
+            document.getElementById("dientichhienthi").innerHTML = dientich;
+        }
+           
+       
+        
+    </script>
+
+</body>
+
+</html>
